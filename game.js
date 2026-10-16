@@ -5,7 +5,7 @@ var player1 = new GameObject();
 
 player1.x = 50;
 player1.y = 200;
-player1.width = 30;
+player1.width = 10;
 player1.height = 100;
 player1.color = "red";
 
@@ -13,7 +13,7 @@ var player2 = new GameObject();
 
 player2.x = canvas.width - 80;
 player2.y = 200;
-player2.width = 30;
+player2.width = 10;
 player2.height = 100;
 player2.color = "blue";
 
@@ -21,7 +21,7 @@ var ball = new GameObject();
 
 ball.x = 500;
 ball.y = 250;
-ball.radius = 30;
+ball.radius = 10;
 ball.color = "black";
 ball.xSpeed = 5;
 ball.ySpeed = 5;
@@ -126,12 +126,12 @@ function animate()
 
 document.addEventListener("keydown", function(event)
 {
-    if (event.key == "w" || event.key == "W")
+    if (event.key == "w" )
     {
         player1.y -= 10;
     }
 
-    if (event.key == "s" || event.key == "S")
+    if (event.key == "s" )
     {
         player1.y += 10;
     }
