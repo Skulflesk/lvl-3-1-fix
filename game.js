@@ -39,9 +39,11 @@ function animate()
 
     if (ball.x + ball.radius >= canvas.width)
     {
-        ball.x = canvas.width - ball.radius;
-        ball.xSpeed = -ball.xSpeed * 1.01;
-        ball.color = "blue";
+        ball.x = 500;
+        ball.y = 250;
+        ball.xSpeed = 5;
+        ball.ySpeed = 5;
+        ball.color = "black";
     }
 
     if (ball.y + ball.radius >= canvas.height)
